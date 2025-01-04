@@ -14,7 +14,7 @@ const Unit1 = () => {
 
     return (
         <>
-            <h4>unit 1</h4>
+            <h4>Unit 1</h4>
             <div>
                     {isVideoUploaded ? <UploadPDF/> : <UploadVideo onSubmit={handelVideoSubmit}/> }
             </div>        

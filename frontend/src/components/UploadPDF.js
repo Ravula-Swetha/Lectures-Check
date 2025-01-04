@@ -61,10 +61,10 @@ const UploadPDF = () => {
             <div className="uploadpdf">
                 <form className="pdfform" onSubmit={submitImage}>
                     <h4>Upload PDF</h4>
-                    <label htmlFor="title">Title:</label>
+                    <label htmlFor="title" className="fs-4 mb-3 mt-3">Title:</label>
                     <input
                         type="text"
-                        className="form-control pt-2 mt-2"
+                        className="form-control form-control-lg pt-2 mt-2"
                         onChange={(e) => setTitle(e.target.value)}
                         placeholder="Title"
                         id="title"
@@ -73,18 +73,18 @@ const UploadPDF = () => {
 
                     <input
                         type="file"
-                        className="form-control mt-4"
+                        className="form-control form-control-lg mt-4"
                         id="file"
                         accept="application/pdf"
                         required
                         onChange={(e) => setFile(e.target.files[0])}
                     />
 
-                    <button className="btn btn-dark mt-3" type="submit">
+                    <button className="btn btn-lg mt-5 me-5 custom-btn" type="submit">
                         Submit
                     </button>
 
-                    <button className="btn btn-dark mt-3 ml-2" type="button" onClick={navigateToGraph}>
+                    <button className="btn btn-lg mt-5 ml-2 ms-5 custom-btn" type="button" onClick={navigateToGraph}>
                         Graph
                     </button>
                     

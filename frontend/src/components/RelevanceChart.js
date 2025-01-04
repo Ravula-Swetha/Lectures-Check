@@ -56,6 +56,7 @@ const RelevanceChart = () => {
             title: {
                 display: true,
                 text: 'Relevance Between Text Files',
+                
             },
         },
         scales: {
@@ -95,10 +96,10 @@ const RelevanceChart = () => {
 
         <div><Navbar />
             <div style={{ display: 'flex', justifyContent: 'space-around', width: '75%', margin: 'auto' }}>
-                <div style={{ width: '50%' }}>
+                <div style={{ width: '800px' }}>
                     <Bar data={barData} options={barOptions} />
                 </div>
-                <div style={{ width: '45%' }}>
+                <div style={{ width: '450px' }}>
                     <Doughnut data={doughnutData} options={doughnutOptions} />
                 </div>
             </div></div>

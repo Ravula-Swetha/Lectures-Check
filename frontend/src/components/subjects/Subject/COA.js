@@ -70,19 +70,17 @@ const COA = () => {
                             </li>
                         </div>
                     </div>
+
                     <div className="col sub--column">
                         <div className="card sub--cards">
                             <div className="card-body sub-card-body">
-                               {renderContent()}
-                               
+                               {renderContent()}       
                             </div>
                         </div>
                     </div>
+                    
                 </div>
-            </div>
-        
-       
-       
+            </div>      
         </>
      );
 }

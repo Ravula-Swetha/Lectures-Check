@@ -72,15 +72,12 @@ const ADE = () => {
                         <div className="card sub--cards">
                             <div className="card-body sub-card-body">
                                 {renderContent()}
-
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
-
-
-
         </>
     );
 }

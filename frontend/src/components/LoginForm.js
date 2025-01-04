@@ -35,47 +35,43 @@ const LoginForm = () => {
     const handleTogglePassword = () => {
         setShowPassword(!showPassword);
     };
-    const customPrimaryColor = '#27012d';
+    const customPrimaryColor = '#81bfda';
     const customSecondaryColor = '#ffffff';
 
     return (
         <div>
-            <nav className="navbar navbar-green bg-green pt-3 pb-2" style={{ backgroundColor: customPrimaryColor }} >
+            <nav className="navbar bg-green pt-3 pb-2" style={{ backgroundColor: customPrimaryColor }} >
                 <div className="container-fluid">
                     {/* <span class="navbar-brand mb-0 h1">Dune state University</span> */}
                     <a className="navbar-brand " href="#" style={{ color: customSecondaryColor }}>
-                        <img src="/dune.jpg" alt="" width="50" height="40" className="d-inline-block align-text-top " />
-                        <br></br>
-                        Dune state University
+                        <div>
+                            <img src="/dune.jpg" alt="" width="60" height="40" className="d-inline-block align-text-top mb-2" />
+                        </div>
+                        Dune State University
                     </a>
                 </div>
             </nav>
 
             <div className="container-fluid h-100 d-flex align-items-center justify-content-center pt-5 mt-5">
-                <div className="card pt-4" style={{ width: '380px', height: '380px', boxShadow: "0 8px 10px 0 rgba(0, 0, 0, 0.1)" }}>
+                <div className="card pt-4" style={{ width: '490px', height: '490px', boxShadow: "0 8px 10px 0 rgba(0, 0, 0, 0.1)" }}>
                     <div className="card-body">
-                        <h2 className="card-title">Login</h2>
-                        <br></br>
+                        <h2 className="card-title display-5 mb-4">Login</h2>
 
                         <form onSubmit={handleSubmit}>
-                            <div className="form-group">
-                                <label>Username:</label>
-                                <br></br>
+                            <div className="form-group my-5 fs-5">
+                                <label className='mb-2'>Username:</label>
                                 <input type="text" className="form-control" value={username} onChange={handleUsernameChange} />
                             </div>
-                            <br></br>
-                            <div className="form-group">
-                                <label>Password:</label>
-                                <br></br>
+                           
+                            <div className="form-group my-3 fs-5">
+                                <label className='mb-2'>Password:</label>
                                 <input type={showPassword ? 'text' : 'password'} className="form-control" value={password} onChange={handlePasswordChange} />
-                                <input type="checkbox" onChange={handleTogglePassword} /> Show Password
+                                <input type="checkbox" onChange={handleTogglePassword} className='mt-4' /> Show Password
                             </div>
-                            <br>
-                            </br>
-                            <button type="submit" className="btn btn-dark" >LOGIN</button>
+                           
+                            <button type="submit" className="btn mt-3 fs-5 custom-btn">LOGIN</button>
 
                         </form>
-                        {/* {error && <p className="text-danger">{error}</p>} */}
                     </div>
                 </div>
             </div>

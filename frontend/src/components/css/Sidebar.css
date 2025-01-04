@@ -1,11 +1,11 @@
 /* Sidebar.css */
 .sidebar {
-  width: 170px;
+  width: 200px;
   /* background-color: #27012d;; */
   height: calc(100vh - 50px);
   /* Adjust height minus navbar height */
   position: fixed;
-  top: 97px;
+  top: 150px;
   /* Set top position to navbar height */
   left: 0;
   z-index: 1000;
@@ -19,23 +19,25 @@
 
 .sidebar li {
   padding: 10px;
+  width: 200px;
 }
 
 .dropbtn {
-  display: inline-block;
-  color: rgb(0, 0, 0);
+  display: flex;
+  color: rgb(14, 13, 13);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   /* margin-bottom: 5%; */
-  font-size: 110%;
 }
 
 
 .dropdown:hover .dropbtn {
-  background-color:#27012d;
-  color: white;
-  
+  /* background-color:#a888b5; */
+  border-radius: 10%;
+  background-color: #f8eac1cd;
+  color: #eea12e;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 li.dropdown {
@@ -46,12 +48,15 @@ li.dropdown {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #27012d;
-  min-width: 160px;
+  background-color:#fada7a;
+  border-radius: 10px;
+  margin-top: 5px;
+  min-width: 200px;
   /* box-shadow: 0px 8px 16px 0px rgba(239, 87, 87, 0.2); */
   z-index: 1;
+  text-align: center;
   margin-left: 60%;
-  /* font-size: larger; */
+  font-size: 19px;
   
 }
 
@@ -65,7 +70,8 @@ li.dropdown {
 }
 
 .dropdown-content a:hover {
-  background-color: #27012d;;
+  background-color: #eea12e;
+  border-radius: 10px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -73,7 +79,7 @@ li.dropdown {
   width: 15px;
 }
 
-.btn
+/* .btn
 {
   background-color: #27012d;
   color: rgb(255, 255, 255);
@@ -81,5 +87,5 @@ li.dropdown {
 .btn:hover
 {
   background-color: #27012d;
-}
+} */
 

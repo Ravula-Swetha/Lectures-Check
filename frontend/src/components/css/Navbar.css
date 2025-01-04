@@ -4,3 +4,12 @@
     margin-left: 0;  
 }
 
+.custom-logout-btn{
+    color: white;
+    /* border-color: #470254 ; */
+}
+
+.custom-logout-btn:hover{
+    background-color: #ffbd73;
+    color: white;
+}

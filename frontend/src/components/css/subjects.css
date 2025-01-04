@@ -71,7 +71,7 @@ body {
 }
 
 .sub-btn {
-    color: #470254;
+    color: black;
     background-color: #ffffff;
     font-size: 18px;
     font-weight: 300%;
@@ -84,7 +84,7 @@ body {
 }
 
 .sub-btn:hover {
-    background-color: #410348;
+    background-color: #eea12e;
     color: #ffffff;
 }
 

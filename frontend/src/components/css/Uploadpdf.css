@@ -80,3 +80,13 @@ canvas.react-pdf__Page__canvas {
     border: none;
     height: 1px;
 }
+
+.custom-btn{
+    color: #eea12e;
+    border: solid 2px #fada7a;
+}
+
+.custom-btn:hover{
+    background-color: #ffbd73;
+    color: white;
+}

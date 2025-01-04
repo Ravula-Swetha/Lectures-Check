@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import React from "react";
 import axios from "axios";
@@ -53,11 +52,11 @@ const UploadVideo = ({ onSubmit }) => {
     return (
         <div className="uploadpdf">
             <form className="pdfform" onSubmit={submitImage}>
-                <h4>Upload Video</h4>
-                <label htmlFor="title">Title:</label>
+                <h4 className="fs-2">Upload Video</h4>
+                <label htmlFor="title" className="fs-4">Title:</label>
                 <input
                     type="text"
-                    className="form-control pt-2 mt-2"
+                    className="form-control form-control-lg pt-2 mt-2"
                     onChange={(e) => VsetTitle(e.target.value)}
                     placeholder="Title"
                     id="title"
@@ -66,15 +65,15 @@ const UploadVideo = ({ onSubmit }) => {
 
                 <input
                     type="file"
-                    className="form-control mt-4"
+                    className="form-control mt-4 form-control-lg"
                     id="file"
                     accept="video/mp4,video/mp3"
                     required
                     onChange={(e) => VsetFile(e.target.files[0])}
                 />
 
-                <button className="btn btn-dark mt-3" type="submit" disabled={loading}>
-                    {loading ? "Wait..." : "Submit"}
+                <button className="btn mt-4 btn-lg custom-btn" type="submit" disabled={loading}>
+                    {loading ? "Uploading..." : "Submit"}
                 </button>
 
             </form>

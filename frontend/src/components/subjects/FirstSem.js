@@ -22,10 +22,6 @@ const FirstSem = () => {
         window.location.href = "/IML"
 
     }
-   
-
-
-    const customPrimaryColor = '#27012d';
 
 
     return ( 
@@ -39,8 +35,7 @@ const FirstSem = () => {
                             <ul class="list-unstyled lists " style={{ fontSize: "105%", fontWeight: "bold" }}>
                                <li><h5>COMPUTER ORGANIZATION AND ARCHITECTURE</h5></li>
                                 <li><p>Please click on the button to upload the Notes</p></li>
-
-                                <button className="btn button mt-1 " style={{ backgroundColor:customPrimaryColor, color: "white" }} onClick={hangleNextPage1} >click</button>
+                                <button className="btn btn-lg mt-1 custom-btn" onClick={hangleNextPage1} >Click</button>
                             </ul>
                     </div>
                 </div>
@@ -54,13 +49,11 @@ const FirstSem = () => {
                             <ul class="list-unstyled lists " style={{ fontSize: "105%", fontWeight: "bold" }}>
                                 <li><h5>Analog and Digital Electronics</h5></li>
                                 <li><p>Please click on the button to upload the Notes</p></li>
-
-                                <button className="btn button mt-1 " style={{ backgroundColor: customPrimaryColor, color: "white" }} onClick={hangleNextPage2} >click</button>
+                                <button className="btn btn-lg mt-1 custom-btn" onClick={hangleNextPage2} >Click</button>
                             </ul>
                         </div>
                     </div>
                 </div>
-
             </div>
 
             <div className="services parent">
@@ -71,7 +64,7 @@ const FirstSem = () => {
                                 <li><h5>Introduction to Machine Learning </h5></li>
                                 <li><p>Please click on the button to upload the Notes</p></li>
 
-                                <button className="btn button mt-1 " style={{ backgroundColor: customPrimaryColor, color: "white" }} onClick={hangleNextPage3} >click</button>
+                                <button className="btn btn-lg mt-1 custom-btn" onClick={hangleNextPage3} >Click</button>
                             </ul>
                         </div>
                     </div>
