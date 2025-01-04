@@ -14,7 +14,6 @@ const ADE = () => {
         switch (currentPage) {
             case 0:
                 return <Unit1 />;
-
             case 1:
                 return <Unit2 />;
             case 2:

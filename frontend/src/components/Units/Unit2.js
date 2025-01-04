@@ -4,9 +4,6 @@ import React from "react";
 import UploadPDF from "../UploadPDF";
 import UploadVideo from "../UploadVideo";
 
-
-
-
 const Unit2 = () => {
     const [isVideoUploaded, setIsVideoUploaded] = useState(false);
 
@@ -20,10 +17,6 @@ const Unit2 = () => {
             <div>
                 {isVideoUploaded ? <UploadPDF/> : <UploadVideo onSubmit={handelVideoSubmit}/>}
             </div>
-
-
-
-
         </>
     );
 }

@@ -1,4 +1,5 @@
 import os
+import tensorflow as tf
 import tensorflow_hub as hub
 import numpy as np
 from scipy.spatial.distance import cosine
@@ -6,6 +7,7 @@ from flask import Flask, request, jsonify
 
 # Disable oneDNN custom operations (optional, based on the initial warning)
 os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 app = Flask(__name__)
 
@@ -16,6 +18,8 @@ model = hub.load("https://tfhub.dev/google/universal-sentence-encoder/4")
 def calculate_use_similarity(text1, text2):
     embeddings = model([text1, text2])
     similarity = 1 - cosine(embeddings[0].numpy(), embeddings[1].numpy())
+    print("Reached llm")
+    print(similarity)
     return similarity
 
 # Function to read text from a file
@@ -35,9 +39,11 @@ def calculate_similarity():
 
     # Calculate similarity
     similarity = calculate_use_similarity(text1, text2)
-
+    print("return similarity: ", similarity)
     # Send the similarity score back
     return jsonify({'similarity': similarity})
 
-if __name__ == '_main_':
-    app.run(port=6000)
+if __name__ == "__main__":
+    # Ensure the Flask app runs in a separate thread to avoid blocking TensorFlow operations
+    from werkzeug.serving import run_simple
+    run_simple('localhost', 6000, app)

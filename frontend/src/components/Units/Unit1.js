@@ -12,17 +12,13 @@ const Unit1 = () => {
         setIsVideoUploaded(true);
     };
 
-       return (
+    return (
         <>
             <h4>unit 1</h4>
             <div>
-                   {isVideoUploaded ? <UploadPDF/> : <UploadVideo onSubmit={handelVideoSubmit}/> }
-            </div>
-        
-           
-            
-            
-       </>
+                    {isVideoUploaded ? <UploadPDF/> : <UploadVideo onSubmit={handelVideoSubmit}/> }
+            </div>        
+        </>
     );
 }
 

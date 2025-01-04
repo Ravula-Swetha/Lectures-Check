@@ -5,9 +5,7 @@ import UploadPDF from "../UploadPDF";
 
 
 const Unit5 = () => {
-    
     const [isVideoUploaded, setIsVideoUploaded] = useState(false);
-
     const handelVideoSubmit = () => {
         setIsVideoUploaded(true);
     };
@@ -18,13 +16,8 @@ const Unit5 = () => {
             <div>
                 {isVideoUploaded ? <UploadPDF/> : <UploadVideo onSubmit={handelVideoSubmit}/>}
             </div>
-
-
-
-
         </>
     );
-    
 }
 
 export default Unit5;
